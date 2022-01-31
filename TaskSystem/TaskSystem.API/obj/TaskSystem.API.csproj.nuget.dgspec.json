@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BMandziuvatyi\\source\\repos\\TaskSystem\\TaskSystem\\TaskSystem.API\\TaskSystem.API.csproj": {}
+    "C:\\Program Files\\Apps\\TaskSystem\\TaskSystem.API\\TaskSystem.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BMandziuvatyi\\source\\repos\\TaskSystem\\TaskSystem\\TaskSystem.API\\TaskSystem.API.csproj": {
+    "C:\\Program Files\\Apps\\TaskSystem\\TaskSystem.API\\TaskSystem.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BMandziuvatyi\\source\\repos\\TaskSystem\\TaskSystem\\TaskSystem.API\\TaskSystem.API.csproj",
+        "projectUniqueName": "C:\\Program Files\\Apps\\TaskSystem\\TaskSystem.API\\TaskSystem.API.csproj",
         "projectName": "TaskSystem.API",
-        "projectPath": "C:\\Users\\BMandziuvatyi\\source\\repos\\TaskSystem\\TaskSystem\\TaskSystem.API\\TaskSystem.API.csproj",
-        "packagesPath": "C:\\Users\\BMandziuvatyi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BMandziuvatyi\\source\\repos\\TaskSystem\\TaskSystem\\TaskSystem.API\\obj\\",
+        "projectPath": "C:\\Program Files\\Apps\\TaskSystem\\TaskSystem.API\\TaskSystem.API.csproj",
+        "packagesPath": "C:\\Users\\MPavlishyn\\.nuget\\packages\\",
+        "outputPath": "C:\\Program Files\\Apps\\TaskSystem\\TaskSystem.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\BMandziuvatyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MPavlishyn\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
