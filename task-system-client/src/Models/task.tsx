@@ -5,10 +5,10 @@ export default class Task {
     Status: string;
     Priority: string;
 
-    constructor(id: string, title: string, description: string, status: string, priority: string) {
+    constructor(id: string, title: string, status: string, priority: string) {
         this.Id = id;
         this.Title = title;
-        this.Description = description;
+        this.Description = '';
         this.Status = status;
         this.Priority = priority;
     } 
