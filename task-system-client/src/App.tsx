@@ -7,7 +7,6 @@ import Login from './Components/Register/Login';
 import SignUp from './Components/Register/SignUp';
 import Header from './Components/Main/Main';
 import About from './Components/About/About';
-import ConfirmRegistration from './Components/ConfirmRegistration/ConfimRegistration';
 import Create from './Components/Crud/Create';
 import RegistrationComplete from './Components/RegistrationComplete/RegistrationComplete';
 import Index from './Components/Crud/index.component';
