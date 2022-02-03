@@ -7,6 +7,7 @@ import SignUp from './Components/Register/SignUp';
 import Header from './Components/Main/Main';
 import About from './Components/About/About';
 import ConfirmRegistration from './Components/ConfirmRegistration/ConfimRegistration';
+import RegistrationComplete from './Components/RegistrationComplete/RegistrationComplete';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/About" element={<About/>} />
           <Route path="/Login" element={<Login/>} />
           <Route path="/Signup" element={<SignUp/>} />
+          <Route path="/Profile" element={<Header/>} />
         </Routes>
       </BrowserRouter>
     </div>
