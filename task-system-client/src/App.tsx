@@ -9,7 +9,7 @@ import Header from './Components/Main/Main';
 import About from './Components/About/About';
 import ConfirmRegistration from './Components/ConfirmRegistration/ConfimRegistration';
 import Create from './Components/Crud/Create';
-import { BrowserRouter as Switch } from 'react-router-dom';
+import RegistrationComplete from './Components/RegistrationComplete/RegistrationComplete';
 
 function App() {
   return (
@@ -24,6 +24,7 @@ function App() {
           <Route path="/Login" element={<Login/>} />
           <Route path="/Signup" element={<SignUp/>} />
           <Route path="/Create" element={<Create/>} />
+          <Route path="/Profile" element={<Header/>} />
         </Routes>
       </BrowserRouter>
     </div>
