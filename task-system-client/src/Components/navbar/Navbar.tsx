@@ -16,6 +16,7 @@ export const Navbar = () => {
               <Nav.Link href="/Main" >Main</Nav.Link>
               <Nav.Link href="/Tasks">Tasks</Nav.Link>
               <Nav.Link href="/About">About us</Nav.Link>
+              <Nav.Link href="/Create">Create</Nav.Link>
             </Nav>
             <Form className="d-flex">
               <Nav.Link href="/Signup"><Button variant="outline-success">Sign up</Button></Nav.Link>
