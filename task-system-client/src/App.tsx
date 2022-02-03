@@ -10,6 +10,7 @@ import About from './Components/About/About';
 import ConfirmRegistration from './Components/ConfirmRegistration/ConfimRegistration';
 import Create from './Components/Crud/Create';
 import RegistrationComplete from './Components/RegistrationComplete/RegistrationComplete';
+import Index from './Components/Crud/index.component';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Header/>} />
           <Route path="/Main" element={<Header/>} />
-          <Route path="/Tasks" element={<Header/>} />
+          <Route path="/Tasks" element={<Index/>} />
           <Route path="/About" element={<About/>} />
           <Route path="/Login" element={<Login/>} />
           <Route path="/Signup" element={<SignUp/>} />
