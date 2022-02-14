@@ -23,4 +23,12 @@ public class TaskController : BaseApiController
         var adminTasks = _mapper.Map<IEnumerable<AdminTaskDto>>(tasks);
         return Ok(adminTasks);
     }
+
+    [HttpGet]
+    public ActionResult<IEnumerable<UserTaskDto>> GetUserTasks(int userId)
+    {
+        var tasks = _taskRepository.GetAll().Where(t => t.AssignedTo == "Marek");
+        var userTasks = _mapper.Map<IEnumerable<UserTaskDto>>(tasks);
+        return Ok(userTasks);
+    }
 }
