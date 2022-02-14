@@ -1,7 +1,8 @@
-﻿namespace TaskSystem.API.Interfaces
+﻿using Task = TaskSystem.API.Entities.Task;
+
+namespace TaskSystem.API.Interfaces;
+
+public interface ITaskRepository
 {
-    public interface ITaskRepository
-    {
-        List<TaskUserDTO> GetUserTaskList();
-    }
+    IEnumerable<Task> GetAll();
 }

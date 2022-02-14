@@ -1,23 +1,26 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using TaskSystem.API.Data;
-using TaskSystem.API.Helpers;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using TaskSystem.API.DTOs;
 using TaskSystem.API.Interfaces;
 
-namespace API.Controllers
-{
-    public class TaskController : BaseApiController
-    {
-        public readonly ITaskRepository TaskRepository;
-        public TaskController(ITaskRepository _taskRepository)
-        {
-            TaskRepository = _taskRepository;   
-        }
+namespace TaskSystem.API.Controllers;
 
-        [HttpGet]
-        public List<TaskUserDTO> GetUserTasksList()
-        {
-            var tasksList = TaskRepository.GetUserTaskList();
-            return tasksList;
-        }
+public class TaskController : BaseApiController
+{
+    private readonly ITaskRepository _taskRepository;
+    private readonly IMapper _mapper;
+
+    public TaskController(ITaskRepository taskRepository, IMapper mapper)
+    {
+        _taskRepository = taskRepository;
+        _mapper = mapper;
+    }
+
+    [HttpGet("admins")]
+    public ActionResult<IEnumerable<AdminTaskDto>> GetTasks()
+    {
+        var tasks = _taskRepository.GetAll();
+        var adminTasks = _mapper.Map<IEnumerable<AdminTaskDto>>(tasks);
+        return Ok(adminTasks);
     }
 }
