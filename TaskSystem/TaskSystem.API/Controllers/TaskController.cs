@@ -40,4 +40,12 @@ public class TaskController : BaseApiController
         _taskRepository.Add(task);
         return Ok();
     }
+
+    [HttpPost]
+    public ActionResult CreateUserTask(UserTaskDto taskDto)
+    {
+        var task = _mapper.Map<Task>(taskDto);
+        _taskRepository.Add(task);
+        return Ok();
+    }
 }
