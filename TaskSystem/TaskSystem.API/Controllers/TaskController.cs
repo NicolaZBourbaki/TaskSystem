@@ -25,12 +25,24 @@ public class TaskController : BaseApiController
         return Ok(adminTasks);
     }
 
-    [HttpGet]
+    [HttpGet("{userId}")]
     public ActionResult<IEnumerable<UserTaskDto>> GetUserTasks(int userId)
     {
         var tasks = _taskRepository.GetAll().Where(t => t.AssignedTo == "Marek");
         var userTasks = _mapper.Map<IEnumerable<UserTaskDto>>(tasks);
         return Ok(userTasks);
+    }
+
+    [HttpGet("admins/{taskId}")]
+    public ActionResult<IEnumerable<UserTaskDto>> GetAdminTask(int taskId)
+    {
+        var task = _taskRepository.FindById(taskId);
+        if (task == null)
+        {
+            return BadRequest("task with such id not exist");
+        }
+        var adminTask = _mapper.Map<AdminTaskDto>(task);
+        return Ok(adminTask);
     }
 
     [HttpPost("admins")]

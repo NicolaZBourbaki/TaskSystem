@@ -17,6 +17,11 @@ public class TaskRepository : ITaskRepository
         return _tasks;
     }
 
+    public Task FindById(int taskId)
+    {
+        return _tasks.FirstOrDefault(t => t.Id == taskId);
+    }
+
     public void Add(Task task)
     { 
         _tasks.Add(task);
