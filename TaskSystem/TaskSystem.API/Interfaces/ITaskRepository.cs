@@ -5,4 +5,5 @@ namespace TaskSystem.API.Interfaces;
 public interface ITaskRepository
 {
     IEnumerable<Task> GetAll();
+    void Add(Task task);
 }

@@ -8,8 +8,8 @@ namespace TaskSystem.API.Mappers
     {
         public MappingProfile()
         {
-            CreateMap<Task, AdminTaskDto>();
-            CreateMap<Task, UserTaskDto>();
+            CreateMap<Task, AdminTaskDto>().ReverseMap();
+            CreateMap<Task, UserTaskDto>().ReverseMap();
         }
     }
 }

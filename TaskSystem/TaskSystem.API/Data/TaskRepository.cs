@@ -17,6 +17,11 @@ public class TaskRepository : ITaskRepository
         return _tasks;
     }
 
+    public void Add(Task task)
+    { 
+        _tasks.Add(task);
+    }
+
     private static List<Task> GetMockData()
     {
         return new List<Task>
